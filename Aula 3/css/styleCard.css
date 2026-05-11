@@ -1,0 +1,28 @@
+.cartao-produto{
+    background-color: #4792dd;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    border: 1px dotted #010102;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cartao-produto h2{
+    color: mintcream;
+    margin-top: 0;
+}
+
+.btn-comprar{
+    background-color: rgb(148, 182, 255);
+    color: mintcream;
+    border: solid 1px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-comprar:hover{
+    background-color: #9b4949
+}

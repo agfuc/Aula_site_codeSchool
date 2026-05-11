@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura</title>
+</head>
+
+<body>
+    <h2>Conversor de Temperatura</h2>
+    <form>
+        Informe a temperatura (ºC): <br>
+        <input type="number" name='celcius' id="celcius" placeholder="Ex: 40"> <br><br>
+
+        <!-- Usando o elemento <button> moderno -->
+        <button type="button" onclick="calcularTemp()">Converter Fahrenheit</button>
+    </form>
+
+    <h3 id="resultado"></h3>
+
+    <script>
+        function calcularTemp() {
+            // Obtendo os valores dos inputs 
+            const celcius = document.getElementById('celcius').value;
+            const Fahrenheit = (celcius * 1.8) + 32;
+            document.getElementById('resultado').innerHTML = "Temperatura em Fahrenheit: " + Fahrenheit.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

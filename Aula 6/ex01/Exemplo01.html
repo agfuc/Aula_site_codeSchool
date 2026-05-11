@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef em Casa</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .grid-exemplo{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 80px 700px 80px;
+            gap: 10px;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .header{
+            grid-column: 1/4;
+            background: #1abc9c;
+        }
+        .menu{
+            grid-column: 1/2;
+            background: #3498db;
+        }
+        .conteudo{
+            grid-column: 2/4;
+            background: #9b59b6;
+        }
+        .footer{
+            background: #e67e22;
+            grid-column: 1/4;
+        }
+
+        .bloco{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-exemplo">
+        <div class="header bloco">Cabeçalho</div>
+        <div class="menu bloco">Menu</div>
+        <div class="conteudo bloco">Conteúdo</div>
+        <div class="footer bloco">Rodapé</div>
+    </div>
+</body>
+</html>

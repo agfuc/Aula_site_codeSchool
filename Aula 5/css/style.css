@@ -1,0 +1,130 @@
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --cor-fundo : #b1b1b1;
+    --cor-caixas: rgb(63, 155, 205);
+    --cor-texto-escuro: black;
+    --cor-texto-claro: white;
+    --cor-destaque: rgb(4, 184, 255);
+    --cor-cabecalho: rgb(82, 85, 114);
+    --cor-borda: rgb(128, 62, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Henny Penny';
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-claro);
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+h1, h2, h3{
+    color: var(--cor-texto-escuro);
+}
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;   
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+
+.cabecalho{
+    grid-column: 1/-1;
+    background-color: var(--cor-cabecalho);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logotipo img{
+    width: 5px;
+}
+
+.menu{
+    display: flex;
+    gap: 15px;
+    -o-animations: forwards;
+}
+
+.menu a{
+    color: var(--cor-fundo);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+.menu a:hover{
+    color: rgb(255, 0, 174);
+    
+}
+
+.grid-noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bloco-branco{
+    background-color: var(--cor-caixas);
+    padding: 30px;
+    border: 1px solid;
+    box-shadow: 0 1px 2px (0, 0, 0, 0.3);
+}
+.cartao{
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    background-color: var(--cor-fundo);
+    transition: transform 0.2s box-shadow 0.2s;
+    cursor: pointer;
+}
+.cartao:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 15px -3px (0, 0, 0, 0.5);
+}
+
+.barra-lateral h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.lista-categorias{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+}
+
+.lista-categorias li{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-escuro);
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid var(--cor-borda);
+    cursor: pointer;
+}
+.lista-categorias li:hover{
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
