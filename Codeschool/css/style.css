@@ -397,6 +397,11 @@ main {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.news-text p{
+    color:var(--text-muted);
+    font-size: 0.95rem;
+    
+}
 /*RESPONSIVIDADE*/
 @media(max-width : 768px) {
 
