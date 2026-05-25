@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSchool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <!--Logo -->
+            <a href="#" class="logo">
+                <i class="ph ph-terminal-window"></i> CodeSchool
+            </a>
+            <!--Menu Principal-->
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                    <li><a href="#numeros" class="nav-link">Sobre</a></li>
+                    <li><a href="#noticias" class="nav-link">Notícias</a></li>
+                    <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <!--Botões de ações-->
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Trocar Tema">
+                    <i class="ph ph-moon"></i>
+                </button>
+                <a href="#contato" class="btn btn-primary d-none-mobile">Matricule-se</a>
+                <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir Menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!--Banner Rotativo Hero-->
+        <section id="home" class="hero">
+            <div id="carousel" class="carousel">
+                <!--Slide 1-->
+                <div class="carousel-slide active">
+                    <img src="img/slide01.jpg" alt="Programação" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>Sua jornada na tecnologia começa aqui</h1>
+                        <p>Aprenda do zero ao avançado com profissionais
+                            atuantes no mercado.
+                        </p>
+                        <a href="#cursos" class="btn btn-primary">
+                            Ver Formações</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/slide02.jpg" alt="Equipe" class="carousel-bg">
+                    <div class="carousel-content container">
+                        <h1>Estude em um ambiente totalmente colaborativo</h1>
+                        <p>Metodologia focada em projetos práticos e
+                            pair programming
+                        </p>
+                        <a href="#contato" class="btn btn-primary">
+                            Agende uma Visita</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control prev" id="btn-prev">
+                <i class="ph ph-caret-left"></i>
+            </button>
+            <button class="carousel-control next" id="btn-next">
+                <i class="ph ph-caret-right"></i>
+            </button>
+        </section>
+        <!-- Seção: CURSOS -->
+        <section id="cursos" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossas Formações</h2>
+                    <div class="line"></div>
+                    <p>Trilhas de aprendizado desenhadas
+                        para suprir as demandas de mercado
+                        atual.
+                    </p>
+                </div>
+                <div class="grid grid-cards">
+                    <article class="card">
+                        <div class="card-icon-wrapper">
+                            <i class="ph ph-laptop"></i>
+                        </div>
+                        <h3>Frontend Developer</h3>
+                        <p>Aprenda HTML, CSS e JavaScript Moderno
+                            e mergulhe no ecossistema do React.js
+                        </p>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon-wrapper">
+                            <i class="ph ph-database"></i>
+                        </div>
+                        <h3>Backend Engineering</h3>
+                        <p>Construa APIS seguras e escaláveis utilizando
+                            Node.js, SQL e ferramentas diversas.
+                        </p>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon-wrapper">
+                            <i class="ph ph-shield-check"></i>
+                        </div>
+                        <h3>Cibersegurança</h3>
+                        <p>Mentoria focada em defesa cibernética,
+                            hacking ético e proteção de dados sensíveis.
+                        </p>
+                        <a href="#" class="btn btn-outline">Detalhes</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--Números-->
+
+        <section id="numeros" class="section stats-section">
+            <div class="container">
+                <div class="section-title title-light">
+                    <h2>Impacto da CodeSchool</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="grid grid-stats">
+                    <div class="stat-box">
+                        <i class="ph ph-student"></i>
+                        <span class="stat-num" data-target="2500">0</span>
+                        <p>Alunos Formados</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph ph-book"></i>
+                        <span class="stat-num" data-target="35">0</span>
+                        <p><span>Cursos Ativos</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph ph-buildings"></i>
+                        <span class="stat-num" data-target="6">0</span>
+                        <p>Campus Físicos</p>
+                    </div>
+                    <div class="stat-box">
+                        <i class="ph ph-handshake"></i>
+                        <span class="stat-num" data-target="400">0</span>
+                        <p>Empresas Parceiras</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--SEÇÃO DE NOTÍCIAS E EVENTOS-->
+        <!--Seção dividida em duas grandes colunas-->
+        <section id="noticias-eventos" class="section">
+            <div class="container grid dual-layout">
+                <!--Coluna 1: Notícias-->
+                <div class="news-container" id="noticias">
+                    <h3 class="box-title">Recentes no Blog</h3>
+                    <!--Notícia 1-->
+                    <article class="news-item">
+                        <img src="img/news01.jpg" alt="Curso PWEB" class="news-img">
+                        <div class="news-text">
+                            <h4>Inscrições abertas para o Curso PWEB 1</h4>
+                            <span class="news-date">11 de maio, 2026</span>
+                            <p>Participe do curso de programação para internet
+                                (HTML, CSS e Javascript)</p>
+                        </div>
+                    </article>
+                    <!--Notícia 2-->
+                    <article class="news-item">
+                        <img src="img/news02.jpg" alt="Laboratório" class="news-img">
+                        <div class="news-text">
+                            <h4>Novo laboratório inaugurado</h4>
+                            <span class="news-date">11 de maio, 2026</span>
+                            <p>Campus central recebe novo laboratório</p>
+                        </div>
+                    </article>
+                </div>
+                <!--Coluna 2 - Seção de eventos-->
+                <div class="events-container" id="eventos">
+                    <h3 class="box-title">Próximos Eventos</h3>
+
+                    <!--Evento 1-->
+                    <div class="event-item">
+                        <div class="event-calendar">
+                            <span class="day">15</span>
+                            <span class="month">NOV</span>
+                        </div>
+                        <div class="event-text">
+                            <h4>Bate Papo: O Futuro do Frontend</h4>
+                            <span class="event-meta">
+                                <i class="ph ph-map-pin"></i> Auditório Principal |
+                                <i class="ph ph-clock"></i> 19:30
+                            </span>
+                        </div>
+                    </div>
+                    <!--Fim do evento-->
+
+                    <!--Evento 2-->
+                    <div class="event-item">
+                        <div class="event-calendar">
+                            <span class="day">25</span>
+                            <span class="month">DEZ</span>
+                        </div>
+                        <div class="event-text">
+                            <h4>Feliz Natal</h4>
+                            <span class="event-meta">
+                                <i class="ph ph-map-pin"></i> Sua Casa |
+                                <i class="ph ph-clock"></i> 00:00
+                            </span>
+                        </div>
+                    </div>
+                    <!--Fim do evento-->
+                </div>
+            </div>
+        </section>
+        <!--Seção Contato-->
+        <section class="section bg-alt" id="contato">
+            <div class="container grid contact-layout">
+                <div class="contact-info">
+                    <h2>Pronto para programar?</h2>
+                    <p>Nossa equipe comercial está pronta para tirar 
+                        suas dúvidas e opções de parcelamento.
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-envelope-simple"></i>
+                        contato@codeschool.edu.br
+                        </li>
+                        <li><i class="ph ph-phone"></i>
+                        (47) 99999-0000
+                        </li>
+                        <li><i class="ph ph-buildings"></i>
+                        Av. dos Expedicionários, 2150 - Campo da Água 
+                        Verde -Canoinhas/SC
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="return false;">
+                        <div class="input-group">
+                            <label for="nome">Como devemos te chamar?</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail para contato</label>
+                            <input type="email" id="email" placeholder="seu.melhor@email.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="msg">Mensagem</label>
+                            <textarea id="msg" rows="4" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container grid footer-grid">
+            <!--1ª Coluna-->
+            <div class="brand-col">
+                <a href="#" class="logo text-light">
+                    <i class="ph ph-terminal-window"></i> CodeSchool
+                </a>
+                <p>Educação técnica de alto nível para construir
+                    as tecnologias de amanhã.
+                </p>
+            </div>
+            <!--2ª Coluna-->
+            <div class="link-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cursos">Nossos Cursos</a></li>
+                    <li><a href="#numeros">Impactos Institucionais</a></li>
+                </ul>
+            </div>
+            <!--3ª Coluna-->
+            <div class="link-col">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="#noticias">Blog & Notícias</a></li>
+                    <li><a href="#eventos">Agenda e Eventos</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <!--4ª Coluna-->
+            <div class="social-col">
+                <h4>Acompanhe</h4>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph ph-github-logo"></i></a>
+                    <a href="#"><i class="ph ph-youtube-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CodeSchool. Todos os direitos reservados. 
+                Desenvolvedor: Seu Nome</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
